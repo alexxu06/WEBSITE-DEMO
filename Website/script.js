@@ -6,18 +6,15 @@ let aboutSection = document.getElementById("about")
 let teachingSection = document.getElementById("Teaching")
 let publicationsSection = document.getElementById("publications")
 
-function jumpAbout() {
+
+aboutNav.addEventListener("click", () => {
     aboutSection.scrollIntoView({behavior: 'smooth'})
-}
+})
 
-function jumpTeach() {
+teachingNav.addEventListener("click", () => {
     teachingSection.scrollIntoView({behavior: 'smooth'})
-}
+})
 
-function jumpPublication() {
+publicationNav.addEventListener("click", () => {
     publicationsSection.scrollIntoView({behavior: 'smooth'})
-}
-
-aboutNav.addEventListener("click", jumpAbout)
-teachingNav.addEventListener("click", jumpTeach)
-publicationNav.addEventListener("click", jumpPublication)
+})

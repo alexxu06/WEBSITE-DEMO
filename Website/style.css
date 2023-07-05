@@ -1,6 +1,7 @@
 /* Document settings */
 
 *{
+    scroll-margin-top: 7.5vh;
     margin: 0;
     padding: 0;
     line-height: 30px;
@@ -11,6 +12,7 @@ body {
 }
 
 /* UNIVERSAL FONTS AND STYLES */
+
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
@@ -60,6 +62,10 @@ header {
     padding: 0px 100px;
     height: 7.5vh;
     cursor: pointer;
+}
+
+#navigation a:hover{
+    background-color: gray;
 }
 
 #navigation a li{
