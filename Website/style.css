@@ -1,0 +1,137 @@
+/* Document settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+body {
+    background-color: white; 
+}
+
+/* UNIVERSAL FONTS AND STYLES */
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    
+    font-size: 35px;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: large;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    margin-top: 7.5vh;
+}
+
+/* HEADER */
+
+header {
+    top:0;
+    z-index: 1;
+    background-color: darkgray;
+    border-bottom: 5px solid;
+    border-color: gray;
+    width: 100%;
+    position: fixed;
+}
+
+#navigation {
+    display: block;
+    float: right;
+}
+
+#navigation a{
+    display: table;
+    float: left;
+    padding: 0px 100px;
+    height: 7.5vh;
+    cursor: pointer;
+}
+
+#navigation a li{
+    font-size: 20px;
+    font-family: sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    color: white
+}
+
+/* ABOUT PAGE */
+
+.aboutDiv {
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin: auto;
+    padding: 40px;
+    width: 90%;
+    background-color: black;
+}
+.aboutDiv h1 {
+    margin: 10px;
+}
+
+.aboutDiv p {
+    margin: 10px;
+}
+
+/* TEACHING PAGE */
+
+.teachingDiv {
+    width: 90%;
+    margin: auto;
+    background-color: lightgray;
+    padding: 40px;
+}
+
+.teachingDiv li {
+    font-size: large;
+    margin: 10px;
+}
+
+.teachingDiv h1 {
+    margin: 10px;
+}
+
+.teachingDiv p {
+    margin: 10px;
+}
+
+/* PUBLICATION PAGE */
+
+.publicationDiv {
+    display: flex;
+    width: 90%;
+    padding: 40px;
+    margin: auto;
+    background-color: white;
+}
+
+.publicationList {
+    float: right;
+}
+
+.publicationItem {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    padding: 20px;
+}
+
