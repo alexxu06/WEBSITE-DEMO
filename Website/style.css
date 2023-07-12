@@ -1,42 +1,30 @@
 /* Document settings */
 
 *{
-    scroll-margin-top: 7.5vh;
+    scroll-margin-top: 40px;
     margin: 0;
-    padding: 0;
     line-height: 30px;
-}
-
-body {
-    background-color: white; 
 }
 
 /* UNIVERSAL FONTS AND STYLES */
 
 
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     
     font-size: 35px;
     white-space: nowrap;
 }
 
 h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     white-space: nowrap;
 }
 
 p {
-    font-family: "Times New Roman", Times, serif;
+    font-family: sans-serif;
 
     font-size: large;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    background-color: white;
-    margin-top: 7.5vh;
 }
 
 /* HEADER */
@@ -44,49 +32,98 @@ p {
 header {
     top:0;
     z-index: 1;
-    background-color: darkgray;
-    border-bottom: 5px solid;
-    border-color: gray;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid;
+    border-color: lightgray;
     width: 100%;
     position: fixed;
+    min-height: 50px;  
 }
 
-#navigation {
-    display: block;
-    float: right;
-}
-
-#navigation a{
-    display: table;
+#titleName {
+    display: flex;
+    align-items: center;
     float: left;
-    padding: 0px 100px;
-    height: 7.5vh;
+    margin-left: 40px;
+    min-height: 50px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a{
+    display: flex;
+    align-items: center;
+    float: right;
+    min-height: 50px;
+    margin: 0;
+}
+
+.navigation a li:hover{
+    color: rgb(80, 80, 255);
+}
+
+.navigation a li{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: gray;
+    display: table;
+    padding: 0px 50px;
     cursor: pointer;
 }
 
-#navigation a:hover{
-    background-color: gray;
+.toggle-button {
+    position: absolute;
+    top: .9rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
 }
 
-#navigation a li{
-    font-size: 20px;
-    font-family: sans-serif;
-    display: table-cell;
-    vertical-align: middle;
-    color: white
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
 }
 
 /* ABOUT PAGE */
 
-.aboutDiv {
-    display: flex;
-    gap: 30px;
-    color: white;
-    margin: auto;
-    padding: 40px;
-    width: 90%;
-    background-color: black;
+#about {
+    margin-top: 50px;
+    height: 100%;
+    background-color: #002035;
 }
+
+.aboutDiv {
+    margin: auto;
+    display: flex;
+    color: white;
+    gap: 50px;
+    padding: 40px;
+    width: 80%;
+}
+
+#profilePic {
+    border-style: solid;
+}
+
+#profileInfo { 
+    display: inline;
+    text-align: center;
+    padding: 20px;
+}
+
 .aboutDiv h1 {
     margin: 10px;
 }
@@ -95,13 +132,26 @@ header {
     margin: 10px;
 }
 
+.about2 {
+    display: flex;
+}
+
+.education {
+    margin-left: 100px;
+}
+
 /* TEACHING PAGE */
 
+#Teaching {
+    height: 100%;
+    background-color: rgb(33, 59, 83);
+}
+
 .teachingDiv {
-    width: 90%;
-    margin: auto;
-    background-color: lightgray;
+    width: 80%;
     padding: 40px;
+    margin: auto;
+    color: white;
 }
 
 .teachingDiv li {
@@ -117,27 +167,154 @@ header {
     margin: 10px;
 }
 
-/* PUBLICATION PAGE */
+/* RESEARCH PAGE */
 
-.publicationDiv {
+#Research {
+    width: 100%;
+    background-color: #002035;
+}
+
+.researchDiv {
     display: flex;
-    width: 90%;
-    padding: 40px;
+    justify-content: space-between;
+    gap: 200px;
     margin: auto;
-    background-color: white;
+    width: 80%;
+    padding: 40px;
 }
 
-.publicationList {
-    float: right;
+.researchDiv h1 {
+    color: white;
+    width: 20%;
+    flex: 1;
 }
 
-.publicationItem {
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
+.researchList li {
+    color: lightblue;
+    list-style-type: none;
     padding: 20px;
 }
 
+.researchList li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.researchList {
+    flex: 4;
+}
+
+.researchItem {
+    color:black;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.researchItem * {
+    margin-top: 5px;
+}
+
+/* PUBLICATION PAGE */
+
+#publications {
+    width: 100%;
+    background-color: rgb(33, 59, 83);
+}
+
+.publicationDiv {
+    margin: auto;
+    width: 80%; 
+    padding: 40px;
+}
+
+.publicationDiv h1 {
+    color: white;
+    width: 20%;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.publicationList li {
+    color: lightblue;
+    list-style-type: none;
+}
+
+.publicationList li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.publicationList {
+    flex: 4;
+}
+
+.publicationItem {
+    color:black;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* SCALINGS */
+
+@media (max-width: 1000px) {
+    /* NAVIAGTION */
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .toggle-button:hover *{
+        background-color: blue;
+    }
+
+    .navigation a {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .navigation {
+        opacity: 0;
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0px;
+        transition: height 200ms ease-in-out;
+    }
+
+    .navigation a li {
+        padding: 10px;
+    }
+
+    .navigation.active {
+        opacity: 1;
+        height: 400px;
+        transition: height 200ms ease-in-out;
+    }
+    
+    #titleName {
+        margin-left: 0;
+        float: none;
+        justify-content: center;
+        min-height: 50px;  
+    }
+
+    /* MAIN DIVS */
+
+    .researchDiv {
+        display: grid;
+        gap: 20px;
+    }
+
+    .aboutDiv {
+        display: grid;
+    }
+
+    .publicationDiv {
+        display: grid;
+    }
+
+    .publicationItem {
+        display: grid;
+    } 
+}

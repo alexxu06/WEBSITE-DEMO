@@ -1,88 +1,255 @@
+<!-- TO DO LIST:-->
+<!-- SEARCH FOR MORE POTENTIAL IMAGES -->
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Website</title>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-    </head>
-  
-    <body>
-        <header>
 
-            <ul id="navigation">
-                <a id="aboutNav"><li>About</li></a>
-                <a id="teachingNav"><li>Teachings</li></a>
-                <a id="publicationNav"><li>Publication</li></a>
-                <a id="otherNav"><li>Others</li></a>
-            </ul>
-        </header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <section id="about">
-            <div class="container">
-            
-                <div class="aboutDiv">
-                    <img id="profilePic" src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="">
+<body>
+    <!-- NAVIGATION BAR -->
+    <header>
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
 
-                    <div class="aboutDescription">
-                        <h1>About Me</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
+        <h1 id="titleName">Jie Han</h1>
+
+        <ul class="navigation">
+            <a id="aboutNav">
+                <li>About</li>
+            </a>
+            <a id="teachingNav">
+                <li>Teachings</li>
+            </a>
+            <a id="researchNav">
+                <li>Research</li>
+            </a>
+            <a id="publicationNav">
+                <li>Publication</li>
+            </a>
+        </ul>
+    </header>
+
+    <!-- ABOUT PAGE -->
+
+    <section id="about">
+        <div class="aboutDiv">
+
+            <div id="profileInfo">
+                <img id="profilePic"
+                    src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg"
+                    alt="">
+                <h1>Jie Han</h1>
+                <p>PERSONAL INFORMATION AND CONTACTS</p>
+            </div>
+
+            <div class="aboutDescription">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing.
+                    Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris
+                    pellentesque.
+                    Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem
+                    fringilla.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam
+                    adipiscing.
+                    Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris
+                    pellentesque.
+                    Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem
+                    fringilla.</p>
+                <div class="about2">
+                    <div class="interests">
+                        <h2>Interests</h2>
+                        <li>Interest A</li>
+                        <li>Interest B</li>
+                        <li>Interest C</li>
+                    </div>
+                    <div class="education">
+                        <h2>Education</h2>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="Teaching">
-            <div class="container">
+    <!-- TEACHING PAGE -->
 
-                <div class="teachingDiv">
-                    <h1>Teaching</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
-                    <li>Teach A</li>
-                    <li>Teach B</li>
-                    <li>Teach C</li>
-                    <li>Teach D</li>
-                </div>
+    <section id="Teaching">
+        <div class="teachingDiv">
+            <h1>Teaching</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend
+                quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit
+                scelerisque mauris pellentesque.
+                Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem
+                fringilla.</p>
+            <li>Teach A</li>
+            <li>Teach B</li>
+            <li>Teach C</li>
+            <li>Teach D</li>
+        </div>
+    </section>
 
-            </div>
-        </section>
+    <!-- Current Research -->
 
-        <section id="publications">
-            <div class="container">
-                <div class="publicationDiv">
-                    <h1>Publications</h1>
+    <section id="Research">
+        <div class="researchDiv">
+            <h1>Current Research</h1>
 
-                    <div class="publicationList">
-                        <div class="publicationItem">
-                            <div>
-                                <h2>Item 1</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
-                            </div>     
-                            <img id="profilePic" src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="">
-                        </div>
-                        <div class="publicationItem">
-                            <div>
-                                <h2>Item 2</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
-                            </div>     
-                            <img id="profilePic" src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="">
-                        </div>
-                        <div class="publicationItem">
-                            <div>
-                                <h2>Item 3</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Elementum nisi quis eleifend quam adipiscing. Ac tortor vitae purus faucibus ornare. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Facilisi morbi tempus iaculis urna id volutpat lacus. Scelerisque viverra mauris in aliquam sem fringilla.</p>
-                            </div>     
-                            <img id="profilePic" src="https://www.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" alt="">
-                        </div>
+            <div class="researchList">
+                <div class="researchItem">
+                    <div>
+                        <h2>The Name of Item 1</h2>
+                        <p>This is a description of the current research.</p>
+                        <button>PDF</button>
                     </div>
-
+                </div>
+                <div class="researchItem">
+                    <div>
+                        <h2>The Name of Item 2</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="researchItem">
+                    <div>
+                        <h2>The Name of Item 3</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <script src="script.js"></script>
-    </body>
+     <!-- Research News -->
+
+     <section id="Research">
+        <div class="researchDiv">
+            <h1>Research News</h1>
+
+            <div class="researchList">
+                <div class="researchItem">
+                    <div>
+                        <h2>The Name of Item 1</h2>
+                        <p>This is a description of the current research.</p>
+                        <button>PDF</button>
+                    </div>
+                </div>
+                <div class="researchItem">
+                    <div>
+                        <h2>The Name of Item 2</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="researchItem">
+                    <div>
+                        <h2>The Name of Item 3</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATION -->
+
+    <section id="publications">
+        <div class="publicationDiv">
+            <h1>Publications</h1>
+
+            <div class="publicationList">
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 1</h2>
+                        <p>asdasd</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 2</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 3</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 4</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 5</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 6</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 7</h2>
+                        <p>asdasd</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 8</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 9</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 10</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 11</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <div class="publicationItem">
+                    <div>
+                        <h2>Item 12</h2>
+                        <p>This is a description of the current research.</p>
+                    </div>
+                </div>
+                <li>See All Publications ></li>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
 </html>
